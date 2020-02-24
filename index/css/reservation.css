@@ -1,0 +1,60 @@
+body {
+    background: url("../img/133.jpg");
+    background-size: 350px;
+    font-family: 'Roboto Slab';
+}
+
+.container {
+    margin-top: 10%;
+    margin-bottom: 4%;
+}
+
+#male {
+    background: rgba(0, 217, 255, 0.596);
+}
+
+#male:hover {
+    background: rgba(0, 195, 255, 0.548);
+}
+
+#female {
+    background: rgba(255, 0, 0, 0.507);
+}
+
+#female:hover {
+    background: rgba(255, 0, 0, 0.616);
+}
+
+.card-title {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(53, 53, 53);
+}
+
+.card-img-top {
+    margin: 20px 25%;
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.card:hover {
+    box-shadow: 5px 7px 34px -22px rgba(0, 0, 0, 0.521);
+}
+
+.card {
+    box-shadow: 10px 7px 34px -22px rgba(0, 0, 0, 0.26);
+    margin-bottom: 20px;
+}
+
+.col-sm-4 {
+    margin-left: 10%;
+}

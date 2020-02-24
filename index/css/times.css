@@ -1,0 +1,42 @@
+body {
+    font-family: 'Roboto Slab';
+}
+
+.container {
+    margin-top: 10%;
+    font-family: 'Roboto Slab';
+}
+
+a {
+    direction: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.time {
+    line-height: 120px;
+    font: bold;
+    font-size: 72px;
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 7px 7px 34px -22px rgba(0, 0, 0, 0.486);
+}
+
+.card {
+    box-shadow: 10px 7px 34px -22px rgba(0, 0, 0, 0.26);
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+}

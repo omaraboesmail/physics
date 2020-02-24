@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/singup.css">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script data-ad-client="ca-pub-4178699745693851" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+
+    <title>times</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="welcome.html">physics</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-item nav-link " href="welcome.html">Home </a>
+
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-item nav-link " href="Reservation.html"> Reservation<span class="sr-only">(current)</span></a>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="BranTrain.html">Bran Training</a>
+                </li>
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="User Name">
+                <input class="form-control mr-sm-2" type="password" placeholder="password">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+        </div>
+    </nav>
+    <div class="container">
+
+        <div>
+            <h3>Reservation form </h3>
+            <p>Please enter your Data Correctly</p>
+        </div>
+        <form class="form" action="/index/welcome.html">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control name" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="Mobile">Mobile Number</label>
+                    <input type="tel" class="form-control" id="Mobile" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="00 St /city" required>
+            </div>
+            <div class="form-group">
+                <label for="ParentName">Parent Name</label>
+                <input type="text" class="form-control" id="ParentName" placeholder="Full Name" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="parentMobile">Parent Mobile Number</label>
+                    <input type="tel" class="form-control" id="parentMobile" placeholder="Mobile or cable" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="job">Parent Job</label>
+                    <input type="tel" class="form-control" id="job" required>
+                </div>
+
+            </div>
+            <br />
+            <label for="g-recaptcha" class="lable"> please verfiy the recaptcha</label>
+            <div class="g-recaptcha" data-sitekey="6Lf5Q8YUAAAAAI-6o20zn54zbj66ONMbjHzKT8da" id="g-recaptcha"></div>
+            <br />
+            <input type="button" class="btn btn-primary" value="Submit" onclick="getCapt()">
+        </form>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+    function getCapt() {
+        validate()
+        var cap = grecaptcha.getResponse();
+        console.log(cap);
+        if (cap.length != 0) {
+            var form = document.getElementsByClassName("form");
+            form[0].submit()
+        } else {
+            document.getElementsByClassName('lable')[0].style.color = "#ff0000";
+            document.getElementsByClassName('lable')[0].style.font = "20 sp bold";
+
+
+        }
+
+        function validate() {
+
+
+
+
+        }
+
+
+    }
+</script>
+
+</html>

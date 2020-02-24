@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto Slab';
+}
+
+.container {
+    margin-top: 2%;
+}
+
+a {
+    padding: 7px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.time {
+    display: inline;
+}
+
+span {
+    float: right;
+    margin-right: 20px;
+}
+
+.card {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
