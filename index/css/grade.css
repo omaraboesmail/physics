@@ -1,8 +1,10 @@
 body {
     font-family: 'Roboto Slab';
+    background: url("../img/133.jpg");
+    background-size: 400px 400px;
 }
 
-.container {
+body .container {
     margin-top: 10%;
 }
 
@@ -34,4 +36,53 @@ h5 {
 .card {
     box-shadow: 10px 7px 34px -22px rgba(0, 0, 0, 0.26);
     margin-bottom: 20px;
+}
+
+footer .social {
+    font-size: 20px;
+    color: white;
+    margin: 5px;
+}
+
+footer .container {
+    padding-top: 10px;
+}
+
+footer {
+    padding-bottom: 10px;
+}
+
+footer .designed {
+    padding: 0;
+    font-size: 10px;
+}
+
+.modal a {
+    font-size: 30px;
+    margin: 20px;
+    padding: 0;
+}
+
+.facebook {
+    color: #4267B2;
+}
+
+.twitter {
+    color: #1DA1F2;
+}
+
+.whatsapp {
+    color: green;
+}
+
+.linked {
+    color: #0077B5;
+}
+
+.github {
+    color: black;
+}
+
+.github :hover {
+    color: gray;
 }
