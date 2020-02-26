@@ -4,44 +4,36 @@ body {
     background-size: 400px 400px;
 }
 
-body .container {
-    margin-top: 10%;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    text-decoration: none;
-    color: black;
-}
-
-.grade {
-    line-height: 120px;
-    font: bold;
-    font-size: 72px;
-    text-align: center;
-}
-
-h5 {
-    text-align: center;
-}
-
-.card:hover {
-    box-shadow: 7px 7px 34px -22px rgba(0, 0, 0, 0.486);
+.container {
+    margin-top: 2%;
+    font-family: 'Roboto Slab';
+    min-height: 100%;
 }
 
 .card {
     box-shadow: 10px 7px 34px -22px rgba(0, 0, 0, 0.26);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.container a {
+    padding: 5px;
+}
+
+.card-img-top {
+    width: 200px;
 }
 
 footer .social {
     font-size: 20px;
     color: white;
     margin: 5px;
+}
+
+footer .social:hover {
+    color: black;
 }
 
 footer .container {
@@ -51,7 +43,7 @@ footer .container {
 footer {
     padding-bottom: 10px;
     position: relative;
-    margin-top: 5%;
+    margin-top: 1%;
     clear: both;
 }
 

@@ -18,6 +18,10 @@ body {
     padding: 10px;
 }
 
+.container a {
+    padding: 5px;
+}
+
 .card-img-top {
     width: 200px;
 }

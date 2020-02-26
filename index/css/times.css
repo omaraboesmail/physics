@@ -55,6 +55,9 @@ footer .container {
 
 footer {
     padding-bottom: 10px;
+    position: relative;
+    margin-top: 5%;
+    clear: both;
 }
 
 footer .designed {
